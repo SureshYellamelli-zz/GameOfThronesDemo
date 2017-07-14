@@ -1,0 +1,30 @@
+﻿<br />
+<br />
+<div>
+    <div class="row cardContainer">         
+        <div class="span3 card">
+           <input data-ng-model="filterval" type="text" placeholder="By Name">
+            <div class="cardHeaderBlue">Books</div>
+            <div class="cardBody" data-ng-repeat="book in books | filter:filterval">
+                 <a href="#/detailinfo/book{{book.isbn}}" class="cardBody btn-link">
+                      {{ book.name }}</a>
+            </div>
+        </div>        
+        <div class="span3 card">
+             <input data-ng-model="filterval2" type="text" placeholder="By Character">
+            <div class="cardHeaderGreen">Characters</div>
+            <div class="cardBody" data-ng-repeat="character in characters | filter:filterval2">                 
+                 <a href="#/detailinfo/character{{character.aliases}}" class="cardBody btn-link">
+                      {{ character.aliases }}</a>
+            </div>
+        </div>
+        <div class="span3 card">
+             <input data-ng-model="filterval3" type="text" placeholder="By House" >
+            <div class="cardHeaderCoral">Houses</div>
+            <div class="cardBody" data-ng-repeat="house in houses | filter:filterval3">                 
+                 <a href="#/detailinfo/house{{house.name}}" class="cardBody btn-link">
+                      {{ house.name }}</a>
+                </div>
+        </div>
+    </div>
+</div>
