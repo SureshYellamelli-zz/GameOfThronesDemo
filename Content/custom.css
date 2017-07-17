@@ -1,5 +1,6 @@
-﻿body {
+﻿.body {
     padding: 65px;
+	margin-left: 25px;
 }
 
 .view {
@@ -47,6 +48,8 @@
 
 .cardContainer {
     width: 90%;
+	margin-left: 30px;
+	margin-top: 20px;
 }
 
 .cardBody {
@@ -84,7 +87,7 @@
     margin-top: -8px;
 }
 
-footer {
+.footer {
     margin-top: 10px;
     font-weight: bold;
 }

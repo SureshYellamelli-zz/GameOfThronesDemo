@@ -3,7 +3,7 @@
 var app = angular.module('customersApp', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
-        .when('/gothome', {
+        .when('/', {
             controller: 'MainController',
             templateUrl: '/app/partials/main.html'
         })
@@ -12,5 +12,5 @@ app.config(function($routeProvider) {
             controller: 'DetailsController',
             templateUrl: '/app/partials/details.html'
         })
-        .otherwise({ redirectTo: '/gothome' });
+        .otherwise({ templateUrl: ''});
 });
